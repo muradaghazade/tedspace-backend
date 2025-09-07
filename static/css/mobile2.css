@@ -1,0 +1,176 @@
+@media (min-width:320px) and (max-width: 480px) {
+   .outlined-text {
+    font-size: 25px !important;
+    margin-left: 55px !important;
+   }
+   .navbar-nav {
+    display: none;
+   }
+    .lflex {
+     flex-direction: column !important;
+     gap: 20px !important;
+     
+    }
+    .lflex h2 {
+      margin-left: 55px !important;
+    }
+    .lflex p {
+      margin-left: 55px !important;
+    }
+    .lflex2 h2 {
+      margin-left: 55px !important;
+    }
+    .lflex2 p {
+      margin-left: 55px !important;
+    }
+    .divr {
+        height: 100% !important;
+        padding-bottom: 20px !important;
+    }
+    .divr h3 {
+        margin-left: 30px !important;
+    }
+    .dive {
+        height: 100% !important;
+    }
+    .dive p {
+        margin-left: 30px !important;
+    }
+    .hr1 {
+        margin-left: 55px!important;
+    }
+    .imgnav {
+        margin-left: 30px !important;
+    }
+    .hr {
+        width: 100% !important;
+    }
+    .img2 {
+        width: 100% !important;
+        margin-left: 0px !important;
+        height: auto !important;
+    }
+    .h11 {
+        margin-left: 30px !important;
+        padding-top: 30px !important;
+        padding-bottom: 30px !important;
+    }
+    .divj h1 {
+        margin-left: 40px !important;
+    }
+    .divj {
+        height: 100% !important;
+        padding-bottom: 20px !important;
+    }
+    .yumurta {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    .class3 p {
+        margin-left: 30px !important;
+    }
+    .img {
+        margin-left: 25px !important;
+    }
+    .class p {
+        margin-left: 30px !important;
+    }
+    .img3 {
+        margin-left: 25px !important;
+    }
+    .class2 p {
+        margin-left: 30px !important;
+    }
+    .img4 {
+        margin-left: 25px !important;
+    }
+    .patrick {
+        width: 100% !important;
+    }
+    .yumurta2 {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    .divh {
+        height: 100% !important;
+        padding-bottom: 20px !important;
+    }
+    .gpt {
+        margin-left: 5px !important;
+    }
+    .p5 {
+        margin-left: 5px !important;
+    }
+    .gpt2 {
+        margin-left: 5px !important;
+    }
+    .divg {
+        height: 100% !important;
+        padding-bottom: 50px !important;
+    }
+    .divg h3 {
+        margin-left: 30px !important;
+    }
+    .divg p {
+        margin-left: 30px !important;
+    }
+    .inp {
+        flex-direction: column !important;
+    }
+    .inp label {
+        margin-left: 30px !important;
+    }
+
+    .inp input {
+        margin-left: 30px !important;
+        margin-top: 5px !important;
+        width: 80% !important;
+    }
+    .inp1 {
+        margin-top: 20px !important;
+        flex-direction: column !important;
+    }
+    .inp1 label {
+        margin-left: 30px !important;
+    }
+
+    .inp1 input {
+        margin-left: 30px !important;
+        margin-top: 5px !important;
+        width: 80% !important;
+    }
+    .btn {
+        margin-left: 30px !important;
+        margin-top: 20px !important;
+        width: 80% !important;
+    }
+    .divf {
+        height: 100% !important;
+        padding-bottom: 20px !important;
+    }
+    .divf h3 {
+        margin-left: 30px !important;
+    }
+    .divf hr {
+        margin-left: 30px !important;
+        width: 50px !important;
+    }
+    .yumurta3 {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    .img4 {
+        margin-right: 0px !important;
+    }
+    .divd {
+        height: 100% !important;
+        padding-bottom: 20px !important;
+    }
+    .divd p {
+        margin-left: 30px !important;
+    }
+}
+
+@media (min-width:600px) and (max-width: 1020px) {
+    
+}
