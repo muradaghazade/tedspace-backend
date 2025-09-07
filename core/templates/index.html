@@ -106,25 +106,15 @@
   <h1 style="color: white; -webkit-text-stroke: 1px rgb(107, 1, 1); font-size: 37px; font-weight: 800; margin-left: 80px; padding-top: 100px; stroke: none;">Ola bilər! Demirik. <span style="color: rgb(107, 1, 1);">Olacaq! deyirik.</span></h1>
   <div style="display: flex; justify-content: space-between;">
   <div class="container-fluid ">
-	<div class=" yumurta">
-		<div class="class3 ">
-        <img class="img" style="margin-left: 80px;" src="{% static 'img/uc22.png' %}" alt="">
-        <p class="p" style="margin-left: 95px;">Comunity-first şəbəkə</p>
-        <p style="margin-left: 95px;" class="p2">Doğru insanları <br>doğru anda birləşdiririk</p>
-        <p class="p3" style="margin-left: 95px;">Aylıq meet-up, bootcamp və hackathonlarla startap–mentor–şirkət üçbucağında sürətli əlaqə yaradırıq. Tələblər əsasında real ehtiyaca uyğun komandaları və tərəfdaşları bir araya gətiririk.</p>
+	<div class="yumurta">
+    {% for post in blog %}
+		<div class="">
+        <img class="img" style="margin-left: 80px;" src="{{ post.image.url}}" alt="">
+        <p class="p" style="margin-left: 95px;">{{ post.name }}</p>
+        <p style="margin-left: 95px;" class="p2">{{ post.description }}</p>
+        <p class="p3" style="margin-left: 95px;">{{post.text}}</p>
 		</div>
-		<div class="class  ">
-        <img class="img3" style="margin-left: 40px;" src="{% static 'img/image 1.png' %}" alt="">
-        <p class="p" style="margin-left: 55px;">Media gücü ilə görünürlük</p>
-        <p style="margin-left: 55px;" class="p2">Auditoriya qazandırırıq</p>
-        <p class="p3" style="margin-left: 55px;">Tedspace, Tedroid Media ekosisteminə bağlıdır. Ehtiyac <br>lazım gəldikdə PR və video dəstəyi ilə istər <br>lokal, istər regional auditoriyaya çıxış əldə edirik.</p>
-		</div>
-		<div class="class2 ">
-        <img class="img4" style="margin-right: 80px;" src="{% static 'img/uc23.png' %}" alt="">
-        <p class="p" style="margin-left: 15px;">Körpü rolumuz</p>
-        <p style="margin-left: 15px;" class="p2">Gücümüzü əlaqələrimiz göstərir</p>
-        <p class="p3" style="margin-left: 15px;">Universitetlər, korporasiyalar və startapları problem → həll → pilot <br>zəncirində birləşdiririk. Real ehtiyaclara yönəlmiş co-creation və <br>mentor şəbəkəsi ilə nəticəni təmin edirik.</p>
-		</div>
+    {% endfor %}
 	</div>
 </div>
 </div>
@@ -219,21 +209,11 @@
       <div>
         <div class="container-fluid">
 	<div class="yumurta3">
-		<div class="y1">
-      <img style="margin-left: 40px;" class="wdc24" src="{% static "img/image 4.png" %}" alt="">
+    {% for partner in partners %}
+		<div class="">
+      <img style="margin-left: 40px;" width="200" src="{{ partner.image.url }}" alt="">
 		</div>
-		<div class="y2">
-      <img style="margin-left: 30px;" class="wdc24_2" src="{% static "img/image 4.png" %}" alt="">
-
-		</div>
-		<div class="y3">
-      <img  style="margin-left: 30px;"  class="wdc24_3" src="{% static "img/image 4.png" %}" alt="">
-
-		</div>
-		<div class="y4">
-      <img style="margin-left: 20px;" class="wdc24_4" src="{% static "img/image 4.png" %}" alt="">
-
-		</div>
+    {% endfor %}
       </div>
 </div>
 
