@@ -146,18 +146,22 @@
       <h3 style="font-weight: bolder; color: rgb(107, 1, 1); margin-left: 110px; padding-top: 70px; font-size: 36px;">Başlamağa hazırsan?</h3>
       <h3 style="font-weight: bolder; color: white; -webkit-text-stroke: 1px rgb(107, 1, 1); margin-left: 110px; padding-top: -20px; font-size: 36px;">Bizimlə əlaqə saxla</h3>
       <p style="font-size: 14px; font-weight: 400; color: rgb(107, 1, 1); margin-left: 110px; margin-top: 10px;">Formu doldur, komandamız ən qısa zamanda geri dönsün</p>
-
+  <form action="" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
       <div>
         <!-- Input Hissesi -->
           <div class="inp" style="display: flex;">
             <div style="display: grid;">
             <label class="label" style="font-size: 12px; font-weight: bold; color: rgb(107, 1, 1); margin-left: 110px; margin-top: 25px;" for="name">Ad <span style="color: #fb454c; font-weight: 1000;">*</span></label>
-            <input class="input_small" style="margin-left: 110px;" type="text" id="name" name="name">
+            {{ form.name }}
+            {{ form.name.errors }}
             </div>
 
             <div style="display: grid;">
             <label class="label" style="font-size: 12px; font-weight: bold; color: rgb(107, 1, 1); margin-left: 60px; margin-top: 25px;" for="soyad">Soyad <span style="color: #fb454c; font-weight: 1000;">*</span></label>
-            <input class="input_small" style="margin-left: 60px;" type="text" id="soyad" name="soyad">   
+             
+            {{ form.surname }}
+            {{ form.surname.errors }} 
             </div>
         </div>
 
@@ -168,35 +172,47 @@
           <p class="input_p">adınızı bütöv daxil edin</p>
             <div style="display: grid;">
             <label class="label" style="font-size: 12px; font-weight: bold; color: rgb(107, 1, 1); margin-left: 110px; margin-top: px;" for="elektron poçt">Elektron poçt <span style="color: #fb454c; font-weight: 1000;">*</span></label>
-            <input class="input_medium" style="margin-left: 110px;" type="email" id="elektron poçt" name="elektron poçt">   
+            
+            {{ form.email }}
+            {{ form.email.errors }} 
             <p class="input_p">elektron poçtunuzu bütöv daxil edin</p>
             </div>
             
             <div style="display: grid;">
             <label class="label" style="font-size: 12px; font-weight: bold; color: rgb(107, 1, 1); margin-left: 110px; margin-top: px;" for="vəzifə">Vəzifə </label>
-            <input class="input_medium" style="margin-left: 110px;" type="text" id="vəzifə" name="vəzifə">   
+            
+            {{ form.position }} 
+            {{ form.position.errors }}
             </div>
 
             <div style="display: grid;">
             <label class="label" style="font-size: 12px; font-weight: bold; color: rgb(107, 1, 1); margin-left: 110px; margin-top: 10px;" for="şirkətin adı">Şirkətin adı </label>
-            <input class="input_medium" style="margin-left: 110px;" type="text" id="şirkətin adı" name="şirkətin adı">   
+            
+            {{ form.company }} 
+            {{ form.company.errors }} 
             </div>
 
             <div style="display: grid;">
             <label class="label" style="font-size: 12px; font-weight: bold; color: rgb(107, 1, 1); margin-left: 110px; margin-top: 10px;" for="ölkə">Ölkə </label>
-            <input class="input_medium" style="margin-left: 110px;" type="text" id="ölkə" name="ölkə">   
+            
+            {{ form.country }} 
+            {{ form.country.errors }}
             </div>
 
             <!-- ------------ -->
             <div style="display: grid;">
             <label class="label" style="font-size: 12px; font-weight: bold; color: rgb(107, 1, 1); margin-left: 110px; margin-top: 10px;" for="mesaj">Mesaj <span style="color: #fb454c; font-weight: 1000;">*</span></label>
-            <input class="input_large" style="margin-left: 110px;" type="text" id="mesaj" name="mesaj">  
+            
+            {{ form.message }} 
+            {{ form.message.errors }}
+            </div>
             <p class="input_p">İlk addımı sən at dəvamını biz gətirək</p>
             </div>
 
             <button class="btn" type="submit">Təsdiqlə</button>
             </div>
       </div>
+      </form>
 </div>
 
 

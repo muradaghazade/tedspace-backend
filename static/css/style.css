@@ -1,6 +1,8 @@
+html {
+  scroll-behavior: smooth !important;
+}
 body {
   font-family: 'Poppins', sans-serif !important;
-  scroll-behavior: smooth !important;
 }  
   
   
@@ -110,6 +112,14 @@ body {
   background-color: #e8e4e4;
 }
 
+.alishka {
+  margin-left: 110px;
+}
+
+.alishka2 {
+  margin-left: 60px;
+}
+
 .input_small:focus {
     transition: 0.3s;
     outline: none;
@@ -139,6 +149,7 @@ body {
 }
 
 .input_medium {
+  margin-left: 110px;
   border-radius: 50px;
   border: 1.5px solid #6b0101;
   height: 37px;
@@ -159,6 +170,7 @@ body {
 }
 
 .input_large {
+  margin-left: 110px;
   border-radius: 50px;
   border: 1.5px solid #6b0101;
   height: 57px;
