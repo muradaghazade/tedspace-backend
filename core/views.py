@@ -7,14 +7,14 @@ def home(request):
     if request.method == 'POST':
         form = ContactForm(request.POST)
         if form.is_valid():
-            form.save()
+            data = form.save()
             # Send email notification
             name = form.cleaned_data['name']
             surname = form.cleaned_data['surname']
             email = form.cleaned_data['email']
             send_mail(
                 'New Contact Form Submission',
-                f'You have a new contact form submission from {name} {surname}, email: {email}.',
+                f'You have a new contact form submission from {name} {surname}, email: {email}.\n\n http://127.0.0.1:8000/admin/core/contact/{data.id}/change/',
                 'murad.aghazada@div.edu.az',
                 ['murad.aghazada@div.edu.az'],
                 fail_silently=False,
